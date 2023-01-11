@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ERP Demo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="erp-demo.css" />
+
+    <script>
+      function myFunction1() {
+        document.getElementById("demo").style.color = "orange";
+      }
+
+      function myFunction2() {
+        document.getElementById("demo").style.color = "black";
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Products</a>
+      <a href="#">Contact Us</a>
+    </nav>
+
+    <header>
+      <h1>Welcome to My Business</h1>
+    </header>
+
+    <div class="container">
+      <button
+        class="card"
+        onclick="alert('You clicked the card of Our Services!')"
+      >
+        <h2>Our Services</h2>
+        <p>
+          At My Business, we offer a wide range of services to help your
+          business thrive. From marketing and advertising to web development and
+          consulting, we've got you covered.
+        </p>
+      </button>
+
+      <button
+        class="card"
+        id="demo"
+        onclick="alert('You clicked the card of Our Services!')"
+        onmouseover="myFunction1()"
+        onmouseleave="myFunction2()"
+      >
+        <h2>Why Choose Us</h2>
+        <p>
+          We pride ourselves on our excellent customer service and high-quality
+          work. Our team of experienced professionals will work with you to
+          understand your needs and develop a solution that works for you.
+        </p>
+      </button>
+
+      <button
+        class="card"
+        onclick="alert('You clicked the card of Our Services!')"
+      >
+        <h2>Get in Touch</h2>
+        <p>
+          Don't hesitate to contact us if you have any questions or would like
+          to learn more about our services. You can reach us by email at
+          contact@mybusiness.com or by phone at 555-555-5555.
+        </p>
+      </button>
+    </div>
+  </body>
+</html>
