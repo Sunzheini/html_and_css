@@ -1,0 +1,27 @@
+h1 {
+    font-size: 42px;
+    color: blueviolet;
+}
+
+.class1 {
+    color: cornflowerblue;
+}
+
+.class2, 
+.item .nested .item {
+    color: darkblue;
+}
+
+#id1 {
+    color: brown;
+}
+
+.text {
+    background-color: coral;
+}
+
+.item {
+    color: chocolate;
+}
+
+
