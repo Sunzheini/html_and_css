@@ -11,12 +11,39 @@
     <form action="form_receiver.html" method="GET">
       <div>
         <label for="form1">username</label>
-        <input type="text" name="username" id="form1" />
+        <input
+          type="text"
+          name="username"
+          id="form1"
+          placeholder="un"
+          disabled="true"
+          autofocus="true"
+        />
+      </div>
+
+      <div>
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+          <option value="39">39 EU</option>
+          <option value="40">40 EU</option>
+          <option value="41.5">41.5 EU</option>
+        </select>
       </div>
 
       <div>
         <label for="pass1">password</label>
-        <input type="password" name="password" id="pass1" />
+        <input
+          type="password"
+          name="password"
+          id="pass1"
+          placeholder="pw"
+          required="true"
+        />
+      </div>
+
+      <div>
+        <label for="file1">attachment</label>
+        <input type="file" name="attachment" id="file1" />
       </div>
 
       <div>
@@ -42,7 +69,15 @@
         <input type="radio" id="fr" name="location" value="fr" />
       </div>
 
-      <button>Submit</button>
+      <button>Normal</button>
+      <button type="reset">Reset</button>
+      <button type="button">Button</button>
     </form>
+
+    <h2>Outside</h2>
+    <button>Normal</button>
+    <button>Normal</button>
+    <button type="reset">Reset</button>
+    <button type="button">Button</button>
   </body>
 </html>
