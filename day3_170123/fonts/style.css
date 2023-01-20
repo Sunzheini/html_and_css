@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(Roboto-Regular.ttf);
+}
+
+p {
+    font-family: "Roboto-Regular";
+    font-size: 12px;
+}
+
+.main-ul {
+    font-size: 12px;
+}
+
+.main-ul li {
+    /* font-size: 1.2em; */
+    font-size: 1.2rem;
+    font-weight: medium;
+    font-style: oblique;
+    text-align: justify;
+    text-decoration: overline;
+    text-indent: 15px;
+}
+
+.p2 {
+    font-size: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    /* word-break: break-all; */
+    background-color: antiquewhite;
+    cursor: pointer;
+    outline: 1px solid orange;
+    letter-spacing: 1x;
+    line-height: 0.9;
+}
