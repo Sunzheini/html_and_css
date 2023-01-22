@@ -1,0 +1,16 @@
+.link:visited {
+    color: red;
+}
+
+.link:hover {
+    color: green;
+}
+
+.button {
+    background-color: yellow;
+}
+
+.button:hover {
+    background-color: orange;
+    cursor: crosshair;
+}

@@ -1,0 +1,19 @@
+ul > li {
+    background-color: blue;
+}
+
+.container-adjacent p + p {
+    background-color: orange;
+}
+
+.container-adjacent p ~ p {
+    background-color: green;
+}
+
+.nth-example li {
+    background-color: unset;
+}
+
+.nth-example li:nth-child(3) {
+    background-color: gray; 
+}
