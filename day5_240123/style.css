@@ -1,0 +1,11 @@
+p {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    /* 1.5 pyti po shrifta */
+    line-height: 1.5;   
+    /* block - whole width of page*/
+    /* inline - dont start on a new line, breaks on multiple lines*/
+    /* inline-block - dont break on multiple lines?*/
+    display: inline-block;
+}

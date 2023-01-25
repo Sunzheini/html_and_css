@@ -1,0 +1,21 @@
+h2 {
+    background-color: pink;
+    display: inline;
+}
+
+.block {
+    background-color: orange;
+}
+
+label {
+    background-color: green;
+}
+
+.inline {
+    background-color: lightgreen;
+}
+
+.inlineblock {
+    background-color: lightgrey;
+    display: inline-block;
+}

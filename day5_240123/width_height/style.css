@@ -1,0 +1,45 @@
+h2 {
+    width: 500px;
+    background-color: aqua;
+}
+
+.p1 {
+    width: 50%;
+    background-color: pink;
+    min-width: 450px;
+    max-width: 600px;
+}
+
+div {
+    width: 50%;
+    background-color: rgb(87, 143, 143);
+}
+
+.p2 {
+    background-color: lightsalmon;
+    width: 75%;
+}
+
+.inline {
+    width: 200px;
+    background-color: wheat;
+}
+
+.inline2 {
+    display: inline-block;
+    background-color: violet;
+    width: 300px;
+}
+
+.somelist li {
+    display: inline-block;
+    height: auto;
+    min-height: 100px;
+    width: 30%;
+    background-color: wheat;
+}
+
+h3 {
+    height: 100px;
+    background-color: bisque;
+}
