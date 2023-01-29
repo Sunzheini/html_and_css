@@ -17,7 +17,9 @@ div {
 
 .p2 {
     background-color: lightsalmon;
-    width: 75%;
+    width: 65%;
+    max-height: 70px;
+    overflow: auto;
 }
 
 .inline {

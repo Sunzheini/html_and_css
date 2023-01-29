@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.card {
+    display: inline-block;
+    background-color: lightblue;
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 3px 3px;
+    cursor: pointer;
+}

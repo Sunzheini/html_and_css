@@ -1,0 +1,9 @@
+.border {
+    border: 1px solid black;
+}
+
+.outline {
+    border: 1px solid green;
+    outline: 5px solid rgb(51, 255, 0);
+    outline-offset: 3px;
+}

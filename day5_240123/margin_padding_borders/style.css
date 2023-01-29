@@ -1,0 +1,15 @@
+p {
+    background-color: lightpink;
+    margin: 20px;
+    padding: 10px;
+}
+
+span {
+    background-color: rgb(188, 211, 169);
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid rgb(133, 54, 54);
+    border-radius: 6px;
+
+    border-top: 5px solid rgb(92, 133, 54);
+}

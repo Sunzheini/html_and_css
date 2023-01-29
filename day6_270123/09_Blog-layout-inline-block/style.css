@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+}
+
+img {
+    max-width: 100%;
+}
+
+.inline-b {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.art {
+    width: 65%;
+    margin-left: 2%;
+}
+
+.asi {
+    width: 30%;
+}
