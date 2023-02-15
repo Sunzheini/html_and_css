@@ -1,0 +1,166 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    /* grid-template-columns: 100px 3em 40%; */
+    /* grid-template-columns: 1fr 5fr */
+    grid-template-rows: repeat(6, 100px);
+    gap: 16px;
+
+    grid-template-areas: 
+        "head head head head head head"
+        "side . content content content ."
+        "side . content content content ."
+        "side . content content content ."
+        "side . content content content ."
+        "foot foot foot foot foot foot";
+}
+
+.header {
+    background-color: lightsalmon;
+    grid-area: head;
+}
+
+.sidebar {
+    background-color: lightcoral;
+    grid-area: side;
+}
+
+
+.grid-container .item {
+  grid-column-start: 11;
+  grid-column-end: 13;
+  /* grid-column-start: span 3; */
+}
+
+.grid-container .item:nth-child(10),
+.grid-container .item:nth-child(11) {
+  grid-column: span 5;
+}
+
+.grid-container .item:nth-child(1),
+.grid-container .item:nth-child(8) {
+  grid-column: 1 / span 10;
+}
+
+.grid-container .item:nth-child(2) {
+  grid-column: 11;
+  grid-row: 1 / span 2;
+}
+
+/* ------------------------------------------------------- */
+
+.thumbnail {
+    /* width: 320px; */
+    /* height: 320px; */
+    aspect-ratio: 1 / 1;
+
+    /* photo positioning option 1 */
+    /* background-image: url("https://images.unsplash.com/photo-1661961110671-77b71b929d52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+/* photo positioning option 2 */
+.thumbnail__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------------------------------------- */
+
+.absolute {
+    background-color: lightgreen;
+    position: relative;     
+}
+
+.absolute img {
+    width: 100px;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    /* left: 50px; */
+}
+
+/* ------------------------------------------------------- */
+
+.hero .hero__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+
+    transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------------------- */
+
+  .item:nth-child(1) {
+    background-color: #845ec2;
+  }
+  
+/* ------------------------------------------------------- */
+
+  .container {
+    width: calc(100% - 250px);
+    height: 200px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    justify-content: space-evenly; 
+    align-items: center;
+    /* align-items: stretch; */
+
+    gap: 15px;
+
+    /* set how multiple lines are spaced apart from each other. */
+    /* align-content: center; */
+  }
+
+  .item:nth-child(3) {
+    order: 1;
+    align-self: flex-end;
+  } */
+
+/* ----- */
+  /* .item {
+    flex-shrink: 1;
+  }
+  
+  /* ----- */
+  /* .item {
+    flex-grow: 1;
+  } */
+ 
+   .item:nth-child(4) {
+    flex-basis: 150px;
+  }
+  
+/* ------------------------------------------------------- */
+ 
+ main div:nth-child(2) button:nth-of-type(2) {
+  background-color: red;
+}
+
+/* ------------------------------------------------------- */
+ 
+/* 
+moje i s print
+max-width: 600px == ako e <= 600px 
+*/
+@media screen and (max-width:600px){
+  h1 {
+      color: green;
+  }
+}
+
+@import './orange.css' screen and (min-width:600px);
+@import './blue.css' screen and (min-width:900px);;
+
+

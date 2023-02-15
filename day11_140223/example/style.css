@@ -1,0 +1,30 @@
+/* .lg-g6 {
+    width: 360px;
+    height: 570px;
+    border: 1px solid black;
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+h1 {
+    color: blue;
+}
+
+/* 
+moje i s print
+max-width: 600px == ako e <= 600px 
+*/
+@media screen and (max-width:600px){
+    h1 {
+        color: green;
+    }
+}
+
+@media (orientation:landscape) {
+    h1 {
+        background-color: lightyellow;
+    }
+}
