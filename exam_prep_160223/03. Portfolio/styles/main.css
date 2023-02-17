@@ -1,0 +1,175 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:ital,wght@0,200;0,700;1,500&display=swap');
+
+:root {
+    --clr-h-color: #222222;
+    --clr-bg-color: #efeeef;
+    --clr-p-and-icon-color: #585858;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--clr-h-color);
+}
+
+.page-section {
+    background-color: var(--clr-bg-color);
+    max-width: 1880px;
+    height: calc(100vh - 1.5rem);
+    margin: 1.5rem auto;
+    padding: 3rem 5rem;
+    overflow: hidden;
+}
+
+.section-flexed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-flexed .section-info {
+    flex: 0 0 50%;
+}
+
+.section-flexed .section-img {
+    flex: 0 1 35%;
+}
+
+.page-section .title {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+}
+
+.page-section .desc {
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.page-section .divider.vertical {
+    height: 5rem;
+    width: 1px;
+    background-color: var(--clr-h-color);
+}
+
+.page-section .title .bolded {
+    font-weight: bold;
+}
+
+#hero.page-section {
+    position: relative;
+}
+
+#hero .navigation {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+#hero .hero-img {
+    position: absolute;
+    width: 50%;
+    bottom: 0px;
+    right: 3rem;
+}
+
+.page-section .divider.horizontal {
+    height: 1px;
+    width: 5rem;
+    background-color: var(--clr-h-color);
+}
+
+#camera .socials {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#camera .socials .social {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--clr-p-and-icon-color);
+    color: white;
+    position: relative;
+}
+
+#camera .socials .social i {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#gallery .list .picture {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+}
+
+#gallery .list .picture:nth-child(2) {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+#contacts .form {
+    max-width: 70%;
+    margin: 0 auto;
+
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "email subject"
+    "msg msg"
+    "submit submit";
+}
+
+#contacts .form input,
+#contacts .form textarea {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0.25rem;
+    width: 100%;
+}
+
+#contacts .form textarea {
+    resize: none;
+}
+
+#contacts .form .email {
+    grid-area: email;
+}
+
+#contacts .form .subject {
+    grid-area: subject;
+}
+
+#contacts .form .msg {
+    grid-area: msg;
+}
+
+#contacts .form .btn {
+    grid-area: submit;
+}
+
+#contacts .form .btn {
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+

@@ -148,6 +148,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer"
     align-items: center;
     /* align-items: stretch; */
 
+    /* grow shrink size */
+    /* flex: 0 0 50%; */
+
     gap: 15px;
 
     /* set how multiple lines are spaced apart from each other. */
