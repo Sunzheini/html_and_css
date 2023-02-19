@@ -1,0 +1,241 @@
+/* 
+    button-color: #370511
+    text-and-footer-bg - #000000
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+.header {
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+
+    margin-bottom: 5rem;
+}
+
+.header .header-img-container {
+    width: 100%;
+    position: absolute;
+    top: -30%;
+}
+
+.header .header-img-container img {
+    width: 100%;
+}
+
+.header-navbar {
+    width: 100%;
+
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    top: 2rem;
+    align-items: center;
+}
+
+.header-navbar .logo {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.nav .nav-item .nav-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.nav .nav-item .active {
+    color: white;
+    background-color:#370511;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+}
+
+.header-text-container {
+    position: absolute;
+    top: 280px;
+    left: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.header-text-container .header-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header-text-container .header-subtitle {
+    margin-bottom: 2rem;
+}
+
+.header-text-container .header-desc {
+    font-weight: bold;
+}
+
+.header-text-container .header-desc:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    color: white;
+    background-color:#370511;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    width: 300px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    padding-left: 200px;
+    padding-right: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.card-container .card {
+    height: 700px;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card-container .card img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-container .card .separator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-container .card .card-title {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-container .card .card-desc {
+    width: 70%;
+
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-container .card .card-btn {
+    font-size: 1.5rem;
+    border: 2px solid #370511;
+    background-color: white;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    width: 300px;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 3rem;
+    background-color: #000000;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20rem;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.footer .footer-title {
+    font-size: 2.5rem;
+}
+
+.footer .footer-links1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem 7rem;
+}
+
+.footer .footer-links1 .footer-link-item .footer-link {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.footer .social-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .social-container .social-title {
+    font-size: 1.2rem;
+}
+
+.footer .social-container .social-icons-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.footer .social-container .social-icons-list .social-icon {
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
